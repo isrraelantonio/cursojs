@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de exercício</title>
+    <link rel="stylesheet" href="estilo.css">
+
+    
+</head>
+<body>
+    <header><h1>Título</h1></header>
+    <section>
+        <div>
+            <!--dentro dessa div reservamos para por os inputs para inserir caixas para inserção de dados eles serão do tipo namber para haver inclusive a selação com as setinhas para aumentar e diminuir os números todos estarão dentro de parágrafos e trarão os IDs para identificação. lembrando que em meus testes o id funcionou melhor doque os names usados  -->
+            <P>Inicio <input type="number" id="numero1"></P>
+            <P>Fim <input type="number" id="numero2"  id="Fim"></P>
+            <P><P>Pulando de <input type="number" id="pulando"></P></P>
+        </div>
+        <input type="button" value="clique" id="butao" onclick="clicou()">
+        <!--fora da div decidi criar agora um imput do tipo botão e o onclik nos levará até a função do javascript abaixo do botão como você pode conferir temos um parágrafo com a frase "veja a sequência escolhida"-->
+        <p>Veja a sequência escolhida</p> 
+        <div id="resulte"><!--Nessa div aparecerá o resultado e por isso mesmo ela receberá um ID para que a mudança da frase ocorra assim que a função for acionada-->
+            Aqui aparecerá o resultado da sequência.
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Monarcka Programer</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

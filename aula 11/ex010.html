@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAM</title>
+    <style>
+        input#velo{
+            margin: 10px;
+        }
+        input#ver{
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistemas de multas</h1>
+    Velocidade do carro<input id="velo" type="number" name="txtvel"> km/h
+    <input  id="ver" type="button" value="vericar" onclick="calcular()">
+    <div id="res">
+
+    </div>
+    <script>
+        window.alert("Bem vindo ao site do DETRAM")
+         ver.addEventListener("click", calcular)
+        function calcular(){
+            var txt = window.document.querySelector("input#velo")
+            var velo = Number(txt.value)
+            res.innerHTML = `Sua velocidade atual é de  ${velo} quilometros por hora`
+            ver.style.background = "aquamarine"
+            
+            if (velo >= 60){
+                res.innerHTML += "<p> Você está sendo multado pelo ecesso de velocidade"
+                }
+                res.innerHTML += "<p>dirija sempre com cuidado"
+        }
+      
+    </script>  
+</body>
+</html>

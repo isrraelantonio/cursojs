@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando números</title>
+    <style>
+        body{
+            font: normal 12pt Arial;
+            color: rgb(23, 125, 91);
+        }
+        input{
+            font: normal 10pt Arial;
+            width: 100px;
+        }
+        input#somar{
+            margin-left: 10px;
+            background-color: rgb(196, 255, 212);
+        }
+        div#res{
+            margin-top: 10px;
+            color: rgb(23, 125, 91);
+        }
+    </style>
+</head>
+<body>
+    <h1>somando valores </h1>
+    <input type="number" id="txtn1" namber=" txtn1"> +
+    <input type="number" id="txtn2" namber=" txtn2"> 
+    <input type="button" id="somar" value="somar" onclick="somar()">
+    <div id="res">Resultado</div>
+    
+    <script>
+        function somar(){
+            var valor1 = window.document.getElementById('txtn1')
+            var valor2 = window.document.querySelector('input#txtn2')
+            var resposta = window.document.getElementById('res')
+            var valor1 = Number(valor1.value)
+            var valor2 = Number(valor2.value)
+
+            var resposta = valor1 + valor2
+            res.innerHTML = ` A soma dos valores ${valor1} e ${valor2} é igual a <strong>${resposta}</strong>`
+        }
+
+        
+    </script>
+</body>
+</html>

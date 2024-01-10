@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>verificação de idade</title>
+    <link rel="stylesheet" href="estilo.css">
+
+    
+</head>
+<body>
+    <header>
+        <h1>verificação da idade</h1><!--Título da página-->
+    </header>
+    <section>
+        <div > <!--Essa div é para  a caixa de informações que será usada  para interação-->
+           <p>Ano de nascimento</p>
+           <input type="nuber" name="txtano" id="txtano" min="0"><!--Input para a coleta das informações-->
+           <p>Sexo: 
+           <input type="radio" name="radsex" id="masc" checked><!--Nessa caso teremos um botão para seleção. nesse caso para o masculino. Veja que nesse caso temos um checkesd apenas nesse -->
+           <label for="nasc">Masculino</label> <!--Esse label pertence ao primeiro botão o segundo também terá o seu.-->
+           <input type="radio" name="radsex" id="fame"><!--Aqui os butons tem o mesmo nome pois se tiverem nomes diferentes ambos os dois poderão ser selecionados e não é isso que desejamos-->
+           <label for="nasc">Feminino</label>
+        </p>
+        <p><input type="button" value="verificar"onclick="verificar()"></p><!--Esse sera o botão que irá chamar a função do js é um input do tipo button e nele temos um onclick chamando a função-->
+
+        </div>
+        <div id="resp">
+
+             Preencha os dados acima para ver os resultados 
+             
+        </div>
+        <div id="foto"></div>
+    </section>
+    <footer>
+        <p>&copy; Monarcka Programer</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

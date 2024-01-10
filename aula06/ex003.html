@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa</title>
+    <style>
+        body{
+            background-color: rgb(92, 11, 168);
+            color: beige;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>olá, mundo!</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque cum culpa nisi ab unde dicta, nobis ut accusamus magnam facilis laudantium voluptates velit placeat sit iure eaque iusto nemo explicabo.</p>
+    <script>
+       
+        // nesse caso temos a coleta de alguma informação do usuário seja nome ou outra informação. o var irá então armaazenar o oque o usuario armazena na variável n1  n2 nesse caso temos que além de tudo converter os valores coletados para numérico pois por padrão temos que os valores coletados são strings por tento teriámos erros na concatenação. lembrando que eu poderia trabalhar apenas com o Number porém se o desejo é forçar para inteiro ou até mesmo ponto flutuantes eu posso usar o parseInt ou até mesmo o parseFloat.Para converter para istring funciona da mesma forma em ambas as situações.
+
+        var n1= Number.parseFloat(window.prompt("Digite o número 01"))
+        var n2 = Number.parseFloat(window.prompt("Digite o número 02"))
+        var s = n1 + n2
+        window.alert(`a soma entre os valores ${n1} e ${n2} é ${s}`)
+
+    </script>
+</body>
+</html>

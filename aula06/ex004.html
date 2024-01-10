@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font: normal 20px Arial;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        //nesse caso estamos usando o ${} para facilitar a vida no momento de usar as vaiáveis, no caso de minhas ferramentas so funcionou se usado em vez de "" o `` pois se for da primeira forma não funciona. Vale lembrar que no caso do uso de metodos como o ToUpercase deve-se usar também o parenteses () pois o método exige isso//
+        var nome = window.prompt("Qual e o seu nome ?")
+        window.alert(`seu nome tem ${nome.length} letras`)
+        document.write(`seu nome tem ${nome.length} letras`)
+        document.write(`seu nome em letras maiúsculas é:  ${nome.toUpperCase()}`)
+        document.write(`seu nome em letras minusculas é:  ${nome.toLowerCase()}`)
+        var n1 = 1545.5
+        //nessee caso iremos definir de modo fixo dois números após a virgula 
+        document.write(`o numeo em questão é:  ${n1.toFixed(2)}`)
+
+        // já nesse caso temos o localozador para definir o valor da variável como na moeda nacional brasileira inclusive fazendo o uso do cifrão. 
+        document.write(`o numeo em questão é:  ${n1.toLocaleString('pt-BR' , {style: 'currency' , currency: 'BRL'})}`)
+    </script>
+    
+</body>
+</html>

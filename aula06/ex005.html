@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:;
+            color: rgb(81, 12, 12)  ;
+            font-size: ;
+        }
+    </style>
+</head>
+<body>
+    <h1>Primeiros passos em DOM</h1>
+    <p><strong>Aqui vai o resultado</strong> </p>
+    <p id="l">Obrigado por usar o DOM  pela primeira vez em javascript</p>
+    <div id ="b">Clik em mim </div>
+    <div name = "o"> birbizinho sanfadinho e manadinho</div>
+    <script>
+        /* nesse código nós aprendemos o uso da árvore DOM nela vimos a organização parental dentro dos recursos para uso na aplicação. além disso temos a apresentação dentro do documento o charset que no caso diz drespeito a formatação de código, o appname e nesse caso como podemos ver faz uso do appName e tambem o URL percebemos então que conseguimos apartir da ferrameta DOM coletar algumas informações importantes para o programador*/
+        window.document.write(window.document.charset)//ponho no docuemto set de caracteres 
+        window.document.write(window.navigator.appName)//navegadro atual usado 
+        window.document.write(window.document.URL)// a uRl usada 
+        
+        /*vamos agora trabalhar com os seletores em javascript nesse primeiro caso iremos trabalhar com o celetor por marca com o comando getElementsBayTagName() dentro de document  e com o mesmo é possível celecionar mais de um elemento, perceba que fizemos o uso de variáveis para fazer certas especificações dentro do documento como no caso para definição do body e também do parágrafo */
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName("p")[1]
+        window.document.write("Está escrito assim, " + p1.innerText)
+        p1.style.background = "black"
+        p1.style.color ="blue"
+        /* Nesse caso agora iremos ver mais um caso curioso para reprodução de um conteúdo levando com sigo todas as formatações anteriores se no caso de html. Para casos como o do innerText não será conservada a formatação atual*/
+        window.document .write(p1.innerText) 
+        window.ale(p1.innerHTML)
+        /*Além do uso dos seletor getElementsBayTagName podemos usar outras como a do id e nome para uma propiedade name nesse caso são específicamente o getElementBayId() e o  getElementBayName() esse último funciona como o caso visto anteriormente onde pode-se faser atribuições a mais de um elemento da família fazendo o uso dos colchetes para identificá-los na sequência por indice.
+        
+        Para fazer esse trabalho por classe fazemos uso do comando getElementByClassName()
+        */
+       
+        var d =  window.document. ('b')
+        d.style.background = 'black'
+        var la = window.document.getElementsByName("o")[0]
+        la.innerText = "olá"
+        var ol= window.document.querySelector('p#l')
+        ol.style.background = "black"
+    </script>
+</body>
+</html>

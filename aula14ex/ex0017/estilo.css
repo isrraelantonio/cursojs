@@ -1,0 +1,24 @@
+body{
+    background-color: rgb(246, 133, 63);
+    font: normal 15pt Arial;
+}
+header{
+    color: rgb(154, 117, 66);
+    text-align: center;
+}
+section{
+    background-color: rgba(244, 164, 113, 0.868);
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 20px rgba(162, 154, 40, 0.104);
+}
+footer{
+    color: rgb(122, 92, 49);
+    font-style: italic;
+    text-align: center;
+}
+section input #botao{
+        padding-left: 10px;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        div#area{
+            font-size: 20pt;
+            background-color: #0e6f0e;
+            color: aliceblue;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!--o que é o evento : tudo que pode acontecer por exemplo com a div em questão. ou seja qualquer elemento o mais comum é o que chamamos de movimento de mouse
+    Quando o mouse chega até o elemento chamamos de mouseenter  Se mover o mouse por dentro do elemento temos o que chamamos de mousemove
+    já se clicamos no elemento e seguramos temos o que chamamos de mousedown 
+    se  quando solto o botão do mouse chamo essa ação de mouseup
+    apertar e soltar rapidamente temos o que chamamos de click 
+    se tirarmos o mouse da div assim como o pomos sobre ela temos o que chamamos de mouseout.  Existem muitos mais eventos para se usar com os elementos dentro  de javascript 
+    Um site para referência a ser tomar como material de consulta ou para especialização temos o Event reference| MDN, ele é da mozila. O material é bem extenso.
+    -->
+    <!--para disparar eventos e fazer o seu tratamento temos o que chamos de funções que são  linhas de códigos executaveis que só são ativadas quando disparado determinado evento. Essas funções são chamadas de blocos e serão ativadas por exemplo ao click em uma div 
+    os blocos são contruídos dentro de {} e devem ser precedidos pelo termo function e seu nome de ação que inclusive terá em seu final o (aqui ficarão os parâmetros) 
+    veja:
+      function clicouNoMouse(){
+        linhas de códigos para executar a ção ficarão  aqui dentro.
+      } 
+
+-->
+    <div id="area">
+        interaja .....
+    </div>
+    <script>
+         var a = window.document.getElementById("area")
+         a.addEventListener("click", clicar)
+         a.addEventListener("mouseenter", entrar)
+         a.addEventListener("mouseout", saiu)
+
+        function clicar(){
+            a.innerText = "cliclou"
+            a.style.background = "blue"
+            a.style.color = "white"
+        }
+
+        function entrar(){
+            a.innerText = "vai clicar"
+            a.style.background = "pink"
+            a.style.color = "blue"
+        }
+
+        function saiu(){
+            a.innerText = "interaja ....."
+            a.style.background = "green"
+            a.style.color = "white"
+        }
+        /* os erros ou mau funcionamento de javascript dentro do navegador pode ser analizado apartir do uso do devtus */
+    </script>
+</body>
+</html>

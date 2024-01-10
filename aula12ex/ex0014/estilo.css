@@ -1,0 +1,29 @@
+body{
+    background-color: rgb(190, 190, 246);
+    font: normal 15pt Arial;
+}
+header{
+    color: rgb(218, 208, 228);
+    text-align: center;
+}
+section{
+    background-color: rgb(185, 187, 189);
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    /*Aqui dentro do nosso código temos o sombreamento da caixa em css nessa ordem deslocamento lateral, deslocamento vertical e espalhamento  caso seja desejável mudar o lado dos deslocamentos é só deixá-los, por exemplo, negativos*/
+    box-shadow: 5px 5px 20px rgba(93, 88, 88, 0.451);
+}
+footer{
+    color: rgb(218, 208, 228);
+    font-style: italic;
+    text-align: center;
+}
+
+div#msg{
+    text-align: center;
+}
+div#imagem{
+    text-align: center;
+}

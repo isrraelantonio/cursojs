@@ -1,0 +1,31 @@
+body{
+    background-color: rgb(142, 103, 179);
+    font: normal 15pt Arial;
+}
+header{
+    color: rgb(38, 30, 46);
+    text-align: center;
+}
+section{
+    background-color: rgb(185, 187, 189);
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 20px rgb(93, 88, 88);
+}
+footer{
+    color: rgb(38, 30, 46);
+    font-style: italic;
+    text-align: center;
+}   
+select{
+   margin-top: 10px;
+   width: 170px;
+}
+div#res{
+    margin-top: 10px;
+}
+input#adicionar{
+    margin-left: 10px;
+}
